@@ -1,0 +1,139 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom right, #fff1f2, #ffe5ec); /* Attractive gradient */
+  color: #222;
+}
+
+.site-header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.page {
+  display: none;
+  padding: 40px 20px;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Home Page Layout */
+.home-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.home-layout img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-left,
+.image-right {
+  flex: 1;
+  padding: 10px;
+}
+
+.center-content {
+  flex: 2;
+  text-align: center;
+}
+
+.description {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Glowing Deep Teal Button */
+.btn {
+  background-color: #00796b; /* deep teal */
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 121, 107, 0.7);
+  transition: box-shadow 0.4s ease, background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px rgba(0, 121, 107, 1);
+  background-color: #004d40;
+}
+
+/* Split Layout */
+.split-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.split-layout .image-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.split-layout .image-left img {
+  width: 90%;
+  border-radius: 8px;
+}
+
+.split-layout .text-right {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  min-width: 250px;
+}
+
+/* Buttons at Bottom */
+.buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.animated-btn {
+  margin: 5px;
+}
+
+/* Bounce Hover Effect */
+.bounce-on-hover:hover {
+  animation: bounce 0.4s;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .split-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-layout {
+    flex-direction: column;
+  }
+
+  .center-content {
+    margin: 20px 0;
+  }
+}

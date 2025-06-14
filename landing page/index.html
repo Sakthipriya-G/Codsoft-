@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crazy Trends</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- GLOBAL HEADER -->
+  <header class="site-header">
+    <h1>Crazy Trends</h1>
+  </header>
+
+  <!-- HOME PAGE -->
+  <section id="home" class="page active">
+    <div class="home-layout">
+      <div class="image-left">
+        <img src="left-image.jpg" alt="Left Trend Image">
+      </div>
+      <div class="center-content">
+        <p class="description">Discover the boldest fashion making waves this season!</p>
+        <a class="btn" onclick="showPage('whats-hot')">See What's Hot</a>
+      </div>
+      <div class="image-right">
+        <img src="right-image.jpg" alt="Right Trend Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S HOT PAGE (Added Back) -->
+  <section id="whats-hot" class="page">
+    <h2>Explore What's Hot</h2>
+    <div class="split-layout">
+      <div class="image-left">
+        <img src="explore.jpg" alt="Explore Image">
+      </div>
+      <div class="text-right">
+        <p>Fashion isn’t just about what you wear — it’s about who you are, how you express, and the energy you bring into every space. At our store, every collection is a celebration of individuality and self-expression. We don’t just design clothes — we create moments, moods, and memories. Our formals are built for the dreamers, the go-getters, and the boss girls who believe in making powerful impressions. Our casuals are made for laughter-filled hangouts, spontaneous plans, and days when comfort meets confidence. And our ethnic wear? It’s a tribute to our roots, reimagined for the modern spirit — bold, colorful, and full of soul.
+
+          This is your space to explore more — more textures, more trends, more you. Whether you're dressing up for the spotlight or just vibing through your day, our styles are here to empower your presence. Fashion is freedom, and you deserve to wear it your way. So take a deep breath, step in, and explore more — because the next big thing in fashion isn’t a trend… it’s you.</p>
+        <div class="buttons">
+          <a onclick="showPage('Formal')" class="btn animated-btn bounce-on-hover">Formal</a>
+          <a onclick="showPage('Casual')" class="btn animated-btn bounce-on-hover">Casual</a>
+          <a onclick="showPage('Ethnic')" class="btn animated-btn bounce-on-hover">Ethnic</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMAL PAGE -->
+  <section id="Formal" class="page">
+    <h2>Formal</h2>
+    <div class="split-layout">
+      <div class="image-left">
+        <img src="formal.jpg" alt="Formal">
+      </div>
+      <div class="text-right">
+        <p>Step into the spotlight with our formal collection designed to make a statement without saying a word. Every piece is tailored with precision, inspired by global trends yet rooted in timeless sophistication. Whether it's a boardroom presentation, a college seminar, or your first big interview, our formals are crafted for young achievers who lead with elegance. Rich fabrics, clean lines, and polished details come together to create outfits that exude confidence. Because when you look powerful, you feel unstoppable. Redefine professional with pieces that match your ambition and elevate your presence — every single time.</p>
+      </div>
+    </div>
+    <div class="buttons">
+      <a onclick="showPage('Formal')" class="btn animated-btn bounce-on-hover">Formal</a>
+      <a onclick="showPage('Casual')" class="btn animated-btn bounce-on-hover">Casual</a>
+      <a onclick="showPage('Ethnic')" class="btn animated-btn bounce-on-hover">Ethnic</a>
+    </div>
+  </section>
+
+  <!-- CASUAL PAGE -->
+  <section id="Casual" class="page">
+    <h2>Casual</h2>
+    <div class="split-layout">
+      <div class="image-left">
+        <img src="casual.jpg" alt="Casual">
+      </div>
+      <div class="text-right">
+        <p>Life doesn’t come with a dress code — and that’s exactly why our casuals are made for your flow. From lazy brunches to late-night drives, from campus corridors to coffee shop dates — our casual collection moves with you, feels like you, and speaks your vibe. Think relaxed fits, trendy cuts, and effortlessly bold colors. We’re talking about pieces that scream “weekend mood” and whisper “everyday slay” at the same time. It’s not just about fashion — it’s about comfort, personality, and owning your style wherever you go. Dress easy, live loud, and keep it unapologetically real.
+
+
+        </p>
+      </div>
+    </div>
+    <div class="buttons">
+      <a onclick="showPage('Formal')" class="btn animated-btn bounce-on-hover">Formal</a>
+      <a onclick="showPage('Casual')" class="btn animated-btn bounce-on-hover">Casual</a>
+      <a onclick="showPage('Ethnic')" class="btn animated-btn bounce-on-hover">Ethnic</a>
+    </div>
+  </section>
+
+  <!-- ETHNIC PAGE -->
+  <section id="Ethnic" class="page">
+    <h2>Ethnic</h2>
+    <div class="split-layout">
+      <div class="image-left">
+        <img src="ethnic.jpg" alt="Ethnic">
+      </div>
+      <div class="text-right">
+        <p>Tradition is never out of fashion — especially when it comes with a modern twist. Our ethnic collection celebrates your cultural soul with silhouettes that blend classic grace and contemporary flair. From rich embroidery to flowing fabrics, every outfit is a canvas of artistry, colour, and confidence. Designed for festivals, weddings, or just feeling fabulous on a regular day, our ethnic wear lets you honor your heritage while staying ahead in style. Because looking traditional doesn't mean feeling outdated — it means glowing with elegance, wrapped in heritage, and walking like you own every celebration.
+
+        </p>
+      </div>
+    </div>
+    <div class="buttons">
+      <a onclick="showPage('Formal')" class="btn animated-btn bounce-on-hover">Formal</a>
+      <a onclick="showPage('Casual')" class="btn animated-btn bounce-on-hover">Casual</a>
+      <a onclick="showPage('Ethnic')" class="btn animated-btn bounce-on-hover">Ethnic</a>
+    </div>
+  </section>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(page => {
+        page.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
